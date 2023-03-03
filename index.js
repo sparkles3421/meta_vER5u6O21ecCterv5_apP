@@ -67,8 +67,7 @@ http.createServer(function (req, res) {
               responsef = data[index[0]][index[1]][index[2]][index[3]][index[4]].Value;
             }
           }
-          console.log(`data:`+responsef);
-          res.write(responsef);
+          res.write(toString(responsef));
         }
       } else {
         res.setHeader('Content-Type', 'application/json')
