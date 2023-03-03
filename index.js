@@ -23,11 +23,13 @@ http.createServer(function (req, res) {
     } else if(req.url=="/client.js"){
       res.write(fs.readFileSync("client.js", "utf8"))
     } else {
+      console.log(`No base url`);
       var found = false;
       var fdata = '';
       for(var tableIndexCMD=0;tableIndexCMD<commands.length;tableIndexCMD++){
         if(commands[tableIndexCMD][1]){
           if(commands[tableIndexCMD][1]==req.url.substring(2)){
+            console.log(commands[tableIndexCMD][2]);
             data = commands[tableIndexCMD][2]
             found=true;
           }
