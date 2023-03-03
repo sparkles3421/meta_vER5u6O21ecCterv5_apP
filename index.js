@@ -4,6 +4,9 @@ var data = {
   "STATUS":200,
   "ERROR":"null"
 }
+http.get('/client.js', function(req, res) {
+  res.sendFile(path.join(__dirname + '/client.js'));
+});
 http.createServer(function (req, res) {
     console.log(`Request to > root${req.url}`)
     if(req.url=="/")  {
