@@ -34,6 +34,8 @@ http.createServer(function (req, res) {
             data = commands[tableIndexCMD][2]
             found=true;
           }
+        }else{
+          console.log(`invalid table`);
         }
       }
       if(found){
