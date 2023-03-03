@@ -39,12 +39,12 @@ http.createServer(function (req, res) {
       }
       if(found){
         if(fdata){
+          console.log(`scan responsef`);
           const responsef = null;
           const index = fdata.split('/');
           console.log(index);
           if(index.length==1){
             if(data[index[0]]){
-              console.log(index[0]);
               responsef = data[index[0]];
             }
           }
