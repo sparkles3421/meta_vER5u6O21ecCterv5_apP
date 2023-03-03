@@ -1,3 +1,4 @@
+const thisVER = process.env.Latest;
 var http = require('http');
 var data = {
   "STATUS":200,
@@ -9,6 +10,9 @@ http.createServer(function (req, res) {
       res.write(JSON.stringify(data, null, 3));
     } else {
       res.write(JSON.stringify({"STATUS":404,"ERROR":"Invalid path"},null,3));
+    }
+    if(process.env.Latest==thisVER){
+      res.reload();
     }
     res.end();
 }).listen(process.env.PORT || 3000);
