@@ -31,9 +31,7 @@ http.createServer(function (req, res) {
         if(commands[tableIndexCMD][0]){
           console.log(req.url.substring(1));
           if(commands[tableIndexCMD][0]==req.url.substring(1)){
-            console.log(commands[tableIndexCMD][2]);
-            console.log(commands[tableIndexCMD][2]);
-            fdata = commands[tableIndexCMD][2]
+            fdata = commands[tableIndexCMD][1]
             found=true;
           }
         }
