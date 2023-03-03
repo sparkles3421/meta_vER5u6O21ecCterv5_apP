@@ -3,7 +3,7 @@ var fs   = require('fs')
 var http = require('http');
 var data = {
   "STATUS":200,
-  "ERROR":"null"
+  "ERROR":"null",
   "pi":{
     "STATUS":200,
     "ERROR":"null",
