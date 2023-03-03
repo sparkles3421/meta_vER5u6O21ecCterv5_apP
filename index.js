@@ -32,7 +32,7 @@ http.createServer(function (req, res) {
           console.log(req.url.substring(1));
           if(commands[tableIndexCMD][0]==req.url.substring(1)){
             console.log(commands[tableIndexCMD][2]);
-            data = commands[tableIndexCMD][2]
+            fdata = commands[tableIndexCMD][2]
             found=true;
           }
         }
