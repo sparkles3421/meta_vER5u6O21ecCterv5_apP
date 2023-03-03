@@ -25,7 +25,7 @@ http.createServer(function (req, res) {
     } else {
       var found = false;
       var fdata = '';
-      for(var tableIndexCMD=0;tableIndexCMD<pi.length;tableIndexCMD++){
+      for(var tableIndexCMD=0;tableIndexCMD<commands.length;tableIndexCMD++){
         if(commands[tableIndexCMD][1]){
           if(commands[tableIndexCMD][1]==req.url.substring(2)){
             data = commands[tableIndexCMD][2]
