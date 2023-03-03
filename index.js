@@ -39,7 +39,7 @@ http.createServer(function (req, res) {
       if(found){
         if(fdata){
           console.log(`scan responsef`);
-          const responsef = null;
+          var responsef = null;
           const index = fdata.split('/');
           console.log(index);
           if(index.length==1){
@@ -70,7 +70,7 @@ http.createServer(function (req, res) {
           console.log(`data:`+responsef);
           res.write(responsef);
         }
-      }else{
+      } else {
         res.setHeader('Content-Type', 'application/json')
         resid=404;
         res.write(JSON.stringify({"STATUS":404,"ERROR":"Invalid path"},null,3));
