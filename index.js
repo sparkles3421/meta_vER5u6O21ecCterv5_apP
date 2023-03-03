@@ -25,7 +25,7 @@ http.createServer(function (req, res) {
     } else {
       console.log(`No base url`);
       var found = false;
-      var fdata = '';
+      var fdata = 'null';
       for(var tableIndexCMD=0;tableIndexCMD<commands.length;tableIndexCMD++){
         console.log(`check`);
         if(commands[tableIndexCMD][0]){
