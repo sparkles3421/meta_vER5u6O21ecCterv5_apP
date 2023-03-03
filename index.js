@@ -68,7 +68,7 @@ http.createServer(function (req, res) {
               responsef = data[index[0]][index[1]][index[2]][index[3]][index[4]];
             }
           }
-          console.log(responsef);
+          console.log(`data:`+responsef);
           res.write(responsef);
         }
       }else{
