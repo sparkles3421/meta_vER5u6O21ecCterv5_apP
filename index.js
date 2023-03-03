@@ -8,7 +8,7 @@ http.createServer(function (req, res) {
     if(req.url=="/!")  {
       res.write(JSON.stringify(data, null, 3));
     } else {
-      res.write(JSON.stringify({"STATUS":404,"ERROR":"Invalid path"},null,3);
+      res.write(JSON.stringify({"STATUS":404,"ERROR":"Invalid path"},null,3));
     }
     res.end();
 }).listen(process.env.PORT || 3000);
