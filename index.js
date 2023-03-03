@@ -44,27 +44,27 @@ http.createServer(function (req, res) {
           console.log(index);
           if(index.length==1){
             if(data[index[0]]){
-              responsef = data[index[0]];
+              responsef = data[index[0]].Value;
             }
           }
           if(index.length==2){
             if(data[index[0]][index[1]]){
-              responsef = data[index[0]][index[1]];
+              responsef = data[index[0]][index[1]].Value;
             }
           }
           if(index.length==3){
             if(data[index[0]][index[1]][index[2]]){
-              responsef = data[index[0]][index[1]][index[2]];
+              responsef = data[index[0]][index[1]][index[2]].Value;
             }
           }
           if(index.length==4){
             if(data[index[0]][index[1]][index[2]][index[3]]){
-              responsef = data[index[0]][index[1]][index[2]][index[3]];
+              responsef = data[index[0]][index[1]][index[2]][index[3]].Value;
             }
           }
           if(index.length==5){
             if(data[index[0]][index[1]][index[2]][index[3]][index[4]]){
-              responsef = data[index[0]][index[1]][index[2]][index[3]][index[4]];
+              responsef = data[index[0]][index[1]][index[2]][index[3]][index[4]].Value;
             }
           }
           console.log(`data:`+responsef);
