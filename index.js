@@ -12,7 +12,7 @@ http.createServer(function (req, res) {
       res.write(JSON.stringify({"STATUS":404,"ERROR":"Invalid path"},null,3));
     }
     if(process.env.Latest==thisVER){
-      res.reload();
+      res.redirect(req.get('referer'));
     }
     res.end();
 }).listen(process.env.PORT || 3000);
