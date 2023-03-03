@@ -29,13 +29,11 @@ http.createServer(function (req, res) {
       for(var tableIndexCMD=0;tableIndexCMD<commands.length;tableIndexCMD++){
         console.log(`check`);
         if(commands[tableIndexCMD][1]){
-          if(commands[tableIndexCMD][1]==req.url.substring(2)){
+          if(commands[tableIndexCMD][1]==req.url.substring(1)){
             console.log(commands[tableIndexCMD][2]);
             data = commands[tableIndexCMD][2]
             found=true;
           }
-        }else{
-          console.log(`invalid table`);
         }
       }
       if(found){
