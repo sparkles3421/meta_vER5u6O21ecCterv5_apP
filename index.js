@@ -43,6 +43,7 @@ http.createServer(function (req, res) {
           const index = fdata.split('/');
           if(index.length==1){
             if(data[index[0]]){
+              console.log(index[0]);
               responsef = data[index[0]];
             }
           }
